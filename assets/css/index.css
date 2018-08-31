@@ -1,0 +1,342 @@
+ul,
+li,
+ol {
+    list-style: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*定义滚动条高宽及背景 高宽分别对应横竖滚动条的尺寸*/
+
+.panel-body::-webkit-scrollbar {
+    width: 0px;
+    /*滚动条宽度*/
+    height: 0px;
+    /*滚动条高度*/
+}
+
+.wc::-webkit-scrollbar {
+    width: 1px;
+    /*滚动条宽度*/
+    height: 1px;
+    /*滚动条高度*/
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/*定义滚动条轨道 内阴影+圆角*/
+
+.panel-body::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    /*滚动条的背景区域的圆角*/
+    background-color: #eee;
+    /*滚动条的背景颜色*/
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*定义滑块 内阴影+圆角*/
+
+.panel-body::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    /*滚动条的圆角*/
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, .3);
+    background-color: #f2f2f2;
+    /*滚动条的背景颜色*/
+}
+
+#phone {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 375px;
+    height: 667px;
+    border-radius: 3px;
+    box-shadow: #000 0px 0px 10px -2px;
+    background: #fff;
+}
+
+.con {
+    position: relative;
+    height: 100%;
+    /* overflow-x: hidden; */
+}
+
+.wc {
+    width: 100%;
+    height: 100%;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+.panel-body {
+    overflow-y: auto;
+}
+
+#phone>div {
+    border: 1px solid transparent;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 右侧控制 */
+
+.panel .panel-body {
+    padding: 0;
+}
+
+.panel-body h3 {
+    font-size: 18px;
+    line-height: 48px;
+    margin: 0;
+    text-align: center;
+    color: #547df9;
+    border-bottom: 1px solid #e4e9f0;
+    cursor: pointer;
+}
+
+.panel-body .body-content {
+    /* height: 662px; */
+    overflow-y: auto;
+    display: none;
+}
+
+.panel-body .body-content:first-of-type {
+    display: block;
+}
+
+.panel-body .body-content ul {
+    display: inline-block;
+    width: 100%;
+    padding: 32px 24px 0;
+    box-sizing: border-box;
+}
+
+.panel-body .body-content li {
+    width: 100%;
+    margin: 0 auto;
+    color: #e67a7a;
+    border: 1px solid #f5e2dd;
+    margin-bottom: 8px;
+    text-align: center;
+    line-height: 45px;
+    cursor: pointer;
+}
+
+.panel-body .body-content li:hover {
+    color: #fff;
+    background: #3f98cf;
+}
+
+.panel-body .body-content li.active {
+    color: #fff;
+    background: #3f98cf;
+}
+
+.panel-body .body-content .add {
+    background: #3f98cf;
+    color: #fff;
+}
+
+.panel-body .body-content .add span {
+    font-weight: 600;
+    font-size: 21px;
+    margin-right: 5px;
+}
+
+.panel-body .body-img,
+.panel-body .body-base,
+.panel-body .body-other {
+    padding: 16px 24px 0;
+}
+
+.panel-body .body-img p,
+.panel-body .body-base p,
+.panel-body .body-other p {
+    padding-bottom: 16px;
+    font-size: 16px;
+    color: #666;
+}
+
+.panel-body .body-img span,
+.panel-body .body-base span,
+.panel-body .body-other span {
+    margin-right: 20px;
+}
+
+.panel-body .body-img select,
+.panel-body .body-base select {
+    display: inline-block;
+    width: 100px;
+    font-size: 16px;
+    min-width: 100px;
+    text-align: center;
+    line-height: 30px;
+}
+
+.panel-body .body-base input,
+.panel-body .body-other input {
+    display: inline-block;
+    width: 60%;
+    padding: 2px 6px;
+    border: 1px solid #eee;
+}
+
+.panel-body .body-img .root-img {
+    width: 100%;
+    height: 150px;
+    overflow: hidden;
+}
+
+.panel-body .body-img .root-img img {
+    width: 100%;
+    height: auto;
+}
+
+.panel-body .body-img .body-img-btn {
+    padding: 0 15px;
+    margin-top: 15px;
+    box-sizing: border-box;
+}
+
+.panel-body .body-img .body-img-btn button {
+    width: 75px;
+    line-height: 35px;
+    text-align: center;
+    font-size: 16px;
+    background: #f2f2f2;
+    border: 1px solid #eee;
+    border-radius: 3px;
+}
+
+.panel-body .body-img .del {
+    float: right;
+}
+
+.modal-content {
+    overflow: hidden;
+    padding: 10px;
+}
+
+.modal-top {
+    padding: 10px;
+    overflow: hidden;
+    border-bottom: 1px solid #333;
+}
+
+.modal-top .btn {
+    float: left;
+    background: #eee;
+    border-radius: 3px;
+    border: 1px solid #333;
+}
+
+.modal-top .search {
+    float: right;
+}
+
+.modal-top .search input {
+    width: auto;
+    display: inline-block;
+    border: 1px solid #333;
+}
+
+.modal-con .list {
+    text-align: center;
+    display: inline-block;
+    width: 210px;
+    height: 130px;
+    margin: 20px 2px;
+}
+
+.modal-con .list .list-img {
+    width: 200px;
+    height: 120px;
+}
+
+.page {
+    margin-right: 20px;
+    overflow: hidden;
+    width: 18%;
+    float: right;
+}
+
+.page button {
+    padding: 0 10px;
+    line-height: 1.6;
+    background: #eee;
+    border-radius: 3px;
+    border: 1px solid #333;
+}
+
+.page .prev {
+    float: left;
+}
+
+.page .next {
+    float: right;
+}
+
+.submit {
+    text-align: center;
+    padding: 15px 0;
+    border-bottom: 1px solid #ddd;
+}
+
+#phone .bor-red {
+    border-color: red;
+}
